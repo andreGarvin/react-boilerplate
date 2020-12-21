@@ -1,32 +1,35 @@
 {
-  "name": "react-bolierplate-setup",
-  "version": "0.0.0",
-  "description": "This is a simple react bolierplate appllication using webpack for bundling and babel for trans-compilation",
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a simple react boilerplate application starter code using webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p && cp App/index.html dist/index.html",
-    "build:dev": "webpack -d && cp App/index.html dist && webpack-dev-server --content-base app/ --inline --hot"
+    "build": "webpack --mode=production --colors --display-error-details --config webpack.config.js",
+    "build:watch": "NODE_ENV=dev webpack --mode=development --progress --colors --display-error-details --watch --config webpack.config.js"
   },
   "author": "Andre Garvin <Yea Boi>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.7",
-    "style-loader": "^0.19.1",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.6",
-    "webpack-dev-server": "^3.1.4"
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "@babel/preset-react": "7.0.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.0.5",
+    "clean-webpack-plugin": "0.1.19",
+    "copy-webpack-plugin": "6.3.2",
+    "css-loader": "2.1.0",
+    "mini-css-extract-plugin": "0.5.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreGarvin/react-boilerplate-setup.git"
+    "url": "git+https://github.com/andreGarvin/react-boilerplate.git"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "16.13.1",
+    "react-dom": "16.8.1"
   }
 }

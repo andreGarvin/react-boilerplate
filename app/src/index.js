@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 class App extends Component {
     render() {
-        return (<h1>This is a react :|</h1>)
+        return (<h1>This is a react bolierplate starter app</h1>)
     }
 }
 
